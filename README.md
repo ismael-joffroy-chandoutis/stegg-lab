@@ -97,3 +97,5 @@ stegg-lab/
 ## Projets artistiques
 
 → voir `art/README.md`
+
+Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
