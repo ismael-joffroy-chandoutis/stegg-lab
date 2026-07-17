@@ -1,20 +1,20 @@
+**English** · [Français](README.fr.md)
+
 # stegg-lab
 
-Exploration personnelle de la stéganographie avec [stegg](https://ste.gg) (v3.0).
+Artist research on steganography and media provenance for post-deepfake documentary cinema — using [stegg](https://ste.gg) (v3.0).
 
-## Ce qu'est la stéganographie
+## What steganography is
 
-**Cacher que l'information existe** — contrairement au chiffrement qui cache son contenu.
+**Hiding that information exists** — unlike encryption, which hides its content.
 
-Combinés, les deux offrent une sécurité maximale :
-- Chiffrement → le message est illisible même si trouvé
-- Stéganographie → personne ne cherche le message
+Combined, the two provide maximum security:
+- Encryption → the message is unreadable even if found
+- Steganography → nobody looks for the message
 
-## Usage personnel
+## Why this research
 
-- Stocker des données sensibles dans des images d'archives
-- Envoyer des informations discrètes via canaux publics (email, réseaux sociaux)
-- Projets artistiques : images qui contiennent des couches invisibles
+In a context where the documentary image is increasingly put in doubt (deepfakes, AI generation), steganography opens a path opposite to classic authentication: instead of only proving after the fact that an image hasn't been altered, one can inscribe into it, from the start, an invisible proof of provenance (signature, hash, context) that travels with the image without changing its appearance. This repository explores the technical methods (image, text) as material for this research, and as an artistic gesture in itself — see `art/README.md`.
 
 ## Installation
 
@@ -22,80 +22,80 @@ Combinés, les deux offrent une sécurité maximale :
 pip install stegg
 ```
 
-## Méthodes disponibles
+## Available methods
 
 ### Image
 
-| Méthode | Description | Résiste compression JPEG ? |
+| Method | Description | Survives JPEG compression? |
 |---------|-------------|---------------------------|
-| **LSB** | 1 bit par canal dans les bits de poids faible | Non |
-| **F5** | Coefficients DCT du JPEG | Oui |
-| **PVD** | Différences entre paires de pixels | Partiellement |
-| **CHROMA** | Canaux couleur Cb/Cr | Non |
-| **SPECTER** | Saut entre canaux RGB (clé = pattern) | Non |
-| **MATRYOSHKA** | Images dans images (jusqu'à 11 couches) | Non |
-| **GHOST MODE** | AES-256-GCM + LSB + bruit décoy | Non |
+| **LSB** | 1 bit per channel in the least significant bits | No |
+| **F5** | JPEG DCT coefficients | Yes |
+| **PVD** | Differences between pixel pairs | Partially |
+| **CHROMA** | Cb/Cr color channels | No |
+| **SPECTER** | Jump between RGB channels (key = pattern) | No |
+| **MATRYOSHKA** | Images within images (up to 11 layers) | No |
+| **GHOST MODE** | AES-256-GCM + LSB + decoy noise | No |
 
-### Texte (13 méthodes)
+### Text (13 methods)
 
-| Méthode | Principe |
+| Method | Principle |
 |---------|----------|
-| ZERO-WIDTH | Caractères invisibles entre les lettres |
+| ZERO-WIDTH | Invisible characters between letters |
 | INVISIBLE INK | Unicode Tag Characters (U+E0000) |
-| HOMOGLYPHS | 'a' → 'а' cyrillique (identique visuellement) |
-| VARIATION SELECTORS | Modificateurs invisibles après caractères |
-| COMBINING MARKS | Joiners invisibles |
+| HOMOGLYPHS | 'a' → Cyrillic 'а' (visually identical) |
+| VARIATION SELECTORS | Invisible modifiers after characters |
+| COMBINING MARKS | Invisible joiners |
 | CONFUSABLE WHITESPACE | En-space/em-space/thin-space = bits |
-| DIRECTIONAL OVERRIDES | Caractères bidi invisibles |
-| HANGUL FILLER | Caractère coréen invisible |
-| MATH BOLD | 'a' → '𝐚' (aspect gras, encodage différent) |
-| BRAILLE | Chaque octet = motif braille |
+| DIRECTIONAL OVERRIDES | Invisible bidi characters |
+| HANGUL FILLER | Invisible Korean character |
+| MATH BOLD | 'a' → '𝐚' (bold look, different encoding) |
+| BRAILLE | Each byte = braille pattern |
 | EMOJI SUBSTITUTION | 🔵=0, 🔴=1 |
-| EMOJI SKIN TONE | 4 modificateurs = 2 bits chacun |
+| EMOJI SKIN TONE | 4 modifiers = 2 bits each |
 
-## Utilisation CLI
+## CLI usage
 
 ```bash
-# Encoder un message dans une image
+# Encode a message into an image
 stegg encode-cmd --input image.png --message "secret" --output out.png
 
-# Décoder
+# Decode
 stegg decode-cmd --input out.png
 
-# Analyser une image (est-ce qu'elle cache quelque chose ?)
+# Analyze an image (is it hiding something?)
 stegg analyze --input image.png
 ```
 
-## Utilisation Python (API)
+## Python usage (API)
 
-Voir `tools/` pour des scripts prêts à l'emploi.
+See `tools/` for ready-to-use scripts.
 
 ```python
 from PIL import Image
 from steg_core import encode, decode, StegConfig
 
-# Encoder
+# Encode
 img = Image.open("carrier.png")
-config = StegConfig()  # LSB RGB par défaut
-result = encode(img, b"message secret", config, "output.png")
+config = StegConfig()  # LSB RGB by default
+result = encode(img, b"secret message", config, "output.png")
 
-# Décoder
+# Decode
 decoded = decode(Image.open("output.png"))
 print(decoded)
 ```
 
-## Structure du repo
+## Repo structure
 
 ```
 stegg-lab/
-├── docs/          # Documentation des méthodes
-├── examples/      # Fichiers exemples (non inclus dans git)
-├── tools/         # Scripts Python
-└── art/           # Expérimentations artistiques
+├── docs/          # Method documentation
+├── examples/      # Example files (not included in git)
+├── tools/         # Python scripts
+└── art/           # Artistic experiments
 ```
 
-## Projets artistiques
+## Artistic projects
 
-→ voir `art/README.md`
+→ see `art/README.md`
 
-Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
+By [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
