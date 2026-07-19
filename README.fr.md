@@ -16,7 +16,7 @@ Combinés, les deux offrent une sécurité maximale :
 
 ## Pourquoi cette recherche
 
-Dans un contexte où l'image documentaire est de plus en plus mise en doute (deepfakes, génération par IA), la stéganographie ouvre une piste inverse à l'authentification classique : au lieu de seulement prouver après-coup qu'une image n'a pas été altérée, on peut y inscrire, dès l'origine, une preuve de provenance invisible (signature, hash, contexte) qui voyage avec l'image sans en changer l'apparence. Ce dépôt explore les méthodes techniques (image, texte) comme matériau pour cette recherche, et comme geste artistique en soi (voir `art/README.md`).
+Dans un contexte où l'image documentaire est de plus en plus mise en doute (deepfakes, génération par IA), la stéganographie ouvre une piste inverse à l'authentification classique : au lieu de seulement prouver après coup qu'une image n'a pas été altérée, on peut y inscrire, dès l'origine, une preuve de provenance invisible (signature, hash, contexte) qui voyage avec l'image sans en changer l'apparence. Ce dépôt explore les méthodes techniques (image, texte) comme matériau pour cette recherche, et comme geste artistique en soi (voir `art/README.md`).
 
 ## Installation
 
