@@ -4,6 +4,8 @@
 
 Artist research on steganography and media provenance for post-deepfake documentary cinema — using [stegg](https://ste.gg) (v3.0).
 
+<img src="monde.jpg" alt="stegg-lab" width="100%">
+
 ## What steganography is
 
 **Hiding that information exists** — unlike encryption, which hides its content.

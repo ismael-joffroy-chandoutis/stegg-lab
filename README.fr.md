@@ -4,6 +4,8 @@
 
 Recherche d'artiste sur la stéganographie et la provenance des médias, pour un cinéma documentaire post-deepfake — avec [stegg](https://ste.gg) (v3.0).
 
+<img src="monde.jpg" alt="stegg-lab" width="100%">
+
 ## Ce qu'est la stéganographie
 
 **Cacher que l'information existe** — contrairement au chiffrement qui cache son contenu.
