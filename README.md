@@ -2,13 +2,13 @@
 
 # stegg-lab
 
-Artist research on steganography and media provenance for post-deepfake documentary cinema — using [stegg](https://ste.gg) (v3.0).
+Artist research on steganography and media provenance for post-deepfake documentary cinema, using [stegg](https://ste.gg) (v3.0).
 
 <img src="monde.jpg" alt="stegg-lab" width="100%">
 
 ## What steganography is
 
-**Hiding that information exists** — unlike encryption, which hides its content.
+**Hiding that information exists**, unlike encryption, which hides its content.
 
 Combined, the two provide maximum security:
 - Encryption → the message is unreadable even if found
@@ -16,7 +16,7 @@ Combined, the two provide maximum security:
 
 ## Why this research
 
-In a context where the documentary image is increasingly put in doubt (deepfakes, AI generation), steganography opens a path opposite to classic authentication: instead of only proving after the fact that an image hasn't been altered, one can inscribe into it, from the start, an invisible proof of provenance (signature, hash, context) that travels with the image without changing its appearance. This repository explores the technical methods (image, text) as material for this research, and as an artistic gesture in itself — see `art/README.md`.
+In a context where the documentary image is increasingly put in doubt (deepfakes, AI generation), steganography opens a path opposite to classic authentication: instead of only proving after the fact that an image hasn't been altered, one can inscribe into it, from the start, an invisible proof of provenance (signature, hash, context) that travels with the image without changing its appearance. This repository explores the technical methods (image, text) as material for this research, and as an artistic gesture in itself (see `art/README.md`).
 
 ## Installation
 
@@ -90,14 +90,21 @@ print(decoded)
 
 ```
 stegg-lab/
-├── docs/          # Method documentation
-├── examples/      # Example files (not included in git)
-├── tools/         # Python scripts
-└── art/           # Artistic experiments
+├── README.md      # English (this page)
+├── README.fr.md   # French
+├── monde.jpg      # Header image
+├── tools/         # Python scripts (steg.py)
+├── art/           # Artistic experiments (art/README.md)
+├── LICENSE.md     # PolyForm Noncommercial 1.0.0
+└── CITATION.cff   # Citation metadata
 ```
 
 ## Artistic projects
 
 → see `art/README.md`
+
+## License
+
+[PolyForm Noncommercial 1.0.0](LICENSE.md).
 
 By [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).

@@ -1,4 +1,4 @@
-# Art — Projets stéganographiques
+# Art : projets stéganographiques
 
 ## Idées
 
@@ -7,7 +7,7 @@ Images de production Goldberg ou personnelles qui contiennent un texte chiffré 
 Le sens de l'image et le secret coexistent. La beauté de l'image est la couverture.
 
 ### 2. Texte qui contient du texte
-Un communiqué de presse, une légende, une note de dossier — qui porte en elle, invisible,
+Un communiqué de presse, une légende, une note de dossier, qui porte en elle, invisible,
 la version brute, non filtrée, de ce qui a été pensé mais pas dit.
 
 ### 3. Correspondance stéganographique
@@ -28,7 +28,7 @@ Référence : poupée russe, mais aussi structure narrative du film.
 ### 6. Stéganographie textuelle dans les dossiers CNC
 Intégrer des messages zero-width dans les textes institutionnels.
 La note d'intention contient, invisible, la vraie note d'intention.
-(Artistique / conceptuel — pas pour tromper une commission.)
+(Artistique / conceptuel, pas pour tromper une commission.)
 
 ## Références
 

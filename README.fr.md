@@ -2,13 +2,13 @@
 
 # stegg-lab
 
-Recherche d'artiste sur la stéganographie et la provenance des médias, pour un cinéma documentaire post-deepfake — avec [stegg](https://ste.gg) (v3.0).
+Recherche d'artiste sur la stéganographie et la provenance des médias, pour un cinéma documentaire post-deepfake, avec [stegg](https://ste.gg) (v3.0).
 
 <img src="monde.jpg" alt="stegg-lab" width="100%">
 
 ## Ce qu'est la stéganographie
 
-**Cacher que l'information existe** — contrairement au chiffrement qui cache son contenu.
+**Cacher que l'information existe**, contrairement au chiffrement qui cache son contenu.
 
 Combinés, les deux offrent une sécurité maximale :
 - Chiffrement → le message est illisible même si trouvé
@@ -16,7 +16,7 @@ Combinés, les deux offrent une sécurité maximale :
 
 ## Pourquoi cette recherche
 
-Dans un contexte où l'image documentaire est de plus en plus mise en doute (deepfakes, génération par IA), la stéganographie ouvre une piste inverse à l'authentification classique : au lieu de seulement prouver après-coup qu'une image n'a pas été altérée, on peut y inscrire, dès l'origine, une preuve de provenance invisible (signature, hash, contexte) qui voyage avec l'image sans en changer l'apparence. Ce dépôt explore les méthodes techniques (image, texte) comme matériau pour cette recherche, et comme geste artistique en soi — voir `art/README.md`.
+Dans un contexte où l'image documentaire est de plus en plus mise en doute (deepfakes, génération par IA), la stéganographie ouvre une piste inverse à l'authentification classique : au lieu de seulement prouver après-coup qu'une image n'a pas été altérée, on peut y inscrire, dès l'origine, une preuve de provenance invisible (signature, hash, contexte) qui voyage avec l'image sans en changer l'apparence. Ce dépôt explore les méthodes techniques (image, texte) comme matériau pour cette recherche, et comme geste artistique en soi (voir `art/README.md`).
 
 ## Installation
 
@@ -90,14 +90,21 @@ print(decoded)
 
 ```
 stegg-lab/
-├── docs/          # Documentation des méthodes
-├── examples/      # Fichiers exemples (non inclus dans git)
-├── tools/         # Scripts Python
-└── art/           # Expérimentations artistiques
+├── README.md      # Anglais
+├── README.fr.md   # Français (cette page)
+├── monde.jpg      # Image d'en-tête
+├── tools/         # Scripts Python (steg.py)
+├── art/           # Expérimentations artistiques (art/README.md)
+├── LICENSE.md     # PolyForm Noncommercial 1.0.0
+└── CITATION.cff   # Métadonnées de citation
 ```
 
 ## Projets artistiques
 
 → voir `art/README.md`
+
+## Licence
+
+[PolyForm Noncommercial 1.0.0](LICENSE.md).
 
 Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
